@@ -1,0 +1,57 @@
+/*Barra navegadora*/
+
+.ContainerHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(235, 167, 78);
+}
+
+.itemHeadLoge{
+    display: flex;
+    margin-left: 25px;
+}
+
+/* Body */
+
+.main-container{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+/* Filtro buscador (fixed at top) */
+.filter{
+    border-radius: 10px;
+    width:250px ;
+}
+
+/* caourousel*/
+.selector{
+    display: flex;
+    width: 700px;
+    height: 430px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .selector {
+        width: 350px;
+    }
+}
+
+.imagen-selector{
+    /*max-width: 250px;
+    max-height: 200px;*/
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .7;
+    transition: .5s ease;
+}
+.imagen-selector:hover{
+    cursor:crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+

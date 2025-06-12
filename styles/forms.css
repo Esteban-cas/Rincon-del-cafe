@@ -1,0 +1,19 @@
+.button-group{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.button-group button{
+    width: 100px;
+}
+
+.edit{
+    background-color: blue;
+    color: white;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+}
